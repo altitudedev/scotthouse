@@ -19,7 +19,16 @@ const PROGRAMS = [
   { label: "General Inquiry", href: "/contact" },
 ];
 
-const QUICK_ACTIONS = [
+type Action = {
+  kicker: string;
+  title: string;
+  sub?: string;
+  href?: string;
+  external?: boolean;
+  icon: string;
+};
+
+const QUICK_ACTIONS: Action[] = [
   {
     kicker: "Phone",
     title: CONTACT.phone,
@@ -33,10 +42,20 @@ const QUICK_ACTIONS = [
     icon: "mail",
   },
   {
-    kicker: "Located At",
+    kicker: "Get Directions",
     title: CONTACT.club,
-    sub: CONTACT.city,
+    sub: CONTACT.address,
+    href: CONTACT.directionsUrl,
+    external: true,
     icon: "pin",
+  },
+  {
+    kicker: "Course Website",
+    title: "wwgolfclub.com",
+    sub: "Westwood Golf Club · Houston, TX",
+    href: CONTACT.websiteUrl,
+    external: true,
+    icon: "globe",
   },
 ];
 
@@ -52,6 +71,14 @@ function ActionIcon({ kind }: { kind: string }) {
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="4" width="20" height="16" rx="2" />
         <path d="m2 7 10 6 10-6" />
+      </svg>
+    );
+  if (kind === "globe")
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </svg>
     );
   return (
@@ -137,7 +164,14 @@ export default function ContactPage() {
                 return (
                   <StaggerItem key={a.kicker}>
                     {a.href ? (
-                      <a href={a.href}>{inner}</a>
+                      <a
+                        href={a.href}
+                        {...(a.external
+                          ? { target: "_blank", rel: "noopener noreferrer" }
+                          : {})}
+                      >
+                        {inner}
+                      </a>
                     ) : (
                       inner
                     )}
@@ -216,30 +250,69 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* WESTWOOD STRIP */}
-      <section className="relative bg-ink text-white overflow-hidden">
+      {/* WESTWOOD BAND — featured course banner */}
+      <section className="relative bg-ink text-white overflow-hidden min-h-[640px] flex items-end">
         <Image
-          src="/images/coaching-1.jpg"
-          alt=""
+          src="/images/westwood/westwood-course.webp"
+          alt="Westwood Golf Club — hole view"
           fill
           sizes="100vw"
-          className="object-cover opacity-30"
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/30" />
-        <div className="relative mx-auto max-w-[1440px] px-6 md:px-10 py-20 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        {/* dark gradient veil so text reads */}
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/65 to-ink/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
+
+        <div className="relative mx-auto max-w-[1440px] w-full px-6 md:px-10 py-20 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-10 items-end">
           <Reveal variant="up" className="md:col-span-8">
             <p className="eyebrow text-sky">Where You&apos;ll Train</p>
-            <h2 className="display-lg mt-5 text-[clamp(2rem,4.4vw,3.4rem)]">
-              Westwood Golf Club{" "}
-              <span className="text-sky">· Houston, Texas.</span>
-            </h2>
-            <p className="mt-6 text-white/80 max-w-2xl text-[15.5px] leading-relaxed">
-              One of the area&apos;s premier golf environments, and the home
-              of Scott Hause Golf. Lessons, junior development, and CAMPUS
+            <div className="mt-6 flex items-center gap-5">
+              <Image
+                src="/images/westwood/westwood-1928-logo.webp"
+                alt="Westwood Golf Club · Est. 1928"
+                width={140}
+                height={140}
+                className="h-20 md:h-24 w-auto"
+              />
+              <div>
+                <h2 className="display-lg text-[clamp(2rem,4.4vw,3.4rem)] leading-none">
+                  Westwood Golf Club
+                </h2>
+                <p className="mt-2 eyebrow text-sky">
+                  Est. 1928 · Houston, Texas
+                </p>
+              </div>
+            </div>
+            <p className="mt-7 text-white/85 max-w-2xl text-[15.5px] leading-relaxed">
+              One of the area&apos;s premier golf environments, and the home of
+              Scott Hause Golf. Private lessons, junior development, and CAMPUS
               Academy training all happen here.
             </p>
+            <p className="mt-3 text-white/65 text-[14px]">
+              {CONTACT.address}
+            </p>
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <a
+                href={CONTACT.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Get Directions <span aria-hidden>›</span>
+              </a>
+              <a
+                href={CONTACT.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline-light"
+              >
+                Visit wwgolfclub.com
+              </a>
+            </div>
           </Reveal>
-          <div className="md:col-span-4 flex flex-wrap gap-2">
+
+          <div className="md:col-span-4 flex flex-wrap gap-2 justify-start md:justify-end">
             <span className="chip chip-light">PGA Professional</span>
             <span className="chip chip-light">Golf Digest · TX</span>
             <span className="chip chip-light">CAMPUS Academy</span>

@@ -68,8 +68,17 @@ export function SiteFooter() {
           <div className="md:col-span-3">
             <p className="eyebrow text-white/40 mb-4">Contact</p>
             <ul className="space-y-2.5 text-[14px] text-white/80">
-              <li>{CONTACT.club}</li>
-              <li>{CONTACT.city}</li>
+              <li>
+                <a
+                  href={CONTACT.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-sky"
+                >
+                  {CONTACT.club}
+                </a>
+              </li>
+              <li>{CONTACT.address}</li>
               <li>
                 <a href={CONTACT.phoneHref} className="hover:text-sky">
                   {CONTACT.phone}
@@ -78,6 +87,16 @@ export function SiteFooter() {
               <li>
                 <a href={`mailto:${CONTACT.email}`} className="hover:text-sky">
                   {CONTACT.email}
+                </a>
+              </li>
+              <li className="pt-2">
+                <a
+                  href={CONTACT.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky hover:text-accent-2"
+                >
+                  wwgolfclub.com ↗
                 </a>
               </li>
             </ul>

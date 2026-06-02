@@ -13,7 +13,11 @@ export const FOOTER_LINKS = [
 export const CONTACT = {
   club: "Westwood Golf Club",
   city: "Houston, Texas",
+  address: "8888 Country Creek St, Houston, TX 77036",
   phone: "(713) 555-0142",
   phoneHref: "tel:7135550142",
   email: "scott@scotthausegolf.com",
+  websiteUrl: "https://www.wwgolfclub.com/",
+  directionsUrl:
+    "https://www.google.com/maps?daddr=8888+Country+Creek+St,+Houston,+TX+77036",
 } as const;
