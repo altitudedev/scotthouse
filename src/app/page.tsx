@@ -7,6 +7,7 @@ import { HomeHero } from "@/components/home-hero";
 import { FeaturedTestimonial } from "@/components/featured-testimonial";
 import { PartnerStrip } from "@/components/partner-strip";
 import { CampusPartnerBand } from "@/components/campus-partner-band";
+import { CollegeCommitments } from "@/components/college-commitments";
 
 const PROGRAMS = [
   {
@@ -229,6 +230,8 @@ export default function HomePage() {
       <FeaturedTestimonial />
 
       <PartnerStrip />
+
+      <CollegeCommitments />
 
       <CampusPartnerBand />
 

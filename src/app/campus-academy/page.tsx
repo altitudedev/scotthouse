@@ -10,6 +10,7 @@ import { Stagger, StaggerItem, Reveal } from "@/components/reveal";
 import { NextChapter } from "@/components/next-chapter";
 import { CHAPTERS } from "@/lib/chapters";
 import { CampusPartnerBand } from "@/components/campus-partner-band";
+import { CollegeCommitments } from "@/components/college-commitments";
 
 export const metadata: Metadata = {
   title: "CAMPUS Academy Houston — Scott Hause Golf",
@@ -189,6 +190,8 @@ export default function CampusAcademyPage() {
           </Stagger>
         </div>
       </section>
+
+      <CollegeCommitments />
 
       {/* RECRUITING DARK BAND */}
       <section className="relative bg-ink text-white overflow-hidden">
