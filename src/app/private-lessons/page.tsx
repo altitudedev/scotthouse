@@ -53,24 +53,29 @@ const FLOW = [
   },
 ];
 
-const EXPECT = [
+const EXPECT: Array<{ icon: PillarKind; title: string; body: string }> = [
   {
+    icon: "mind",
     title: "Individualized coaching",
     body: "Built around your swing, experience level, and the goals you bring to every lesson.",
   },
   {
+    icon: "arc",
     title: "Clear improvement plans",
     body: "A structured pathway with measurable progress — not a different fix every visit.",
   },
   {
+    icon: "bucket",
     title: "Practical drills & feedback",
     body: "Drills you can actually use between lessons to lock in real change.",
   },
   {
+    icon: "course",
     title: "Structured development",
     body: "Long-term skill building, not band-aids — game-changers that hold under pressure.",
   },
   {
+    icon: "trophy",
     title: "Performance-focused",
     body: "Every concept tied back to lower scores and a more confident player.",
   },
@@ -190,21 +195,18 @@ export default function PrivateLessonsPage() {
           <Stagger className="md:col-span-7 md:col-start-6 space-y-4" step={0.1}>
             {FLOW.map((f) => (
               <StaggerItem key={f.no}>
-                <div className="card-dark p-6 md:p-7 grid grid-cols-12 gap-4 items-start">
-                  <div className="col-span-2">
-                    <p className="eyebrow text-sky">{f.no}</p>
-                    <p className="mt-2 font-mono text-[11px] text-white/55">
-                      {f.minute} min
-                    </p>
-                  </div>
-                  <div className="col-span-10">
-                    <h3 className="font-display text-white text-[22px] md:text-[26px] leading-tight">
+                <div className="card-dark p-7 md:p-8">
+                  <div className="flex items-center justify-between gap-4">
+                    <h3 className="font-display text-white text-[24px] md:text-[28px] leading-none">
                       {f.title}
                     </h3>
-                    <p className="mt-2 text-[14.5px] leading-relaxed text-white/75">
-                      {f.body}
-                    </p>
+                    <span className="inline-flex items-center px-3 py-1.5 rounded-full bg-sky/15 border border-sky/30 text-sky text-[12px] font-semibold tracking-[0.04em] whitespace-nowrap">
+                      {f.minute} MIN
+                    </span>
                   </div>
+                  <p className="mt-4 text-[14.5px] leading-relaxed text-white/75">
+                    {f.body}
+                  </p>
                 </div>
               </StaggerItem>
             ))}
@@ -276,24 +278,24 @@ export default function PrivateLessonsPage() {
           </Reveal>
 
           <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-5" step={0.08}>
-            {EXPECT.map((e, i) => (
+            {EXPECT.map((e) => (
               <StaggerItem key={e.title}>
-                <div className="card p-6 flex flex-col h-full relative overflow-hidden group">
+                <div className="card-dark p-6 flex flex-col h-full relative overflow-hidden group">
                   <div
                     aria-hidden
-                    className="absolute -top-12 -right-12 w-32 h-32 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    className="absolute -top-12 -right-12 w-40 h-40 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
                       background:
-                        "radial-gradient(circle, rgba(74,159,196,0.32) 0%, transparent 70%)",
+                        "radial-gradient(circle, rgba(74,159,196,0.4) 0%, transparent 70%)",
                     }}
                   />
-                  <p className="relative eyebrow text-sky-2">
-                    {String(i + 1).padStart(2, "0")} · Deliverable
-                  </p>
-                  <h3 className="relative mt-3 text-[17px] font-semibold tracking-tight text-ink leading-snug">
+                  <div className="relative">
+                    <PillarIcon kind={e.icon} />
+                  </div>
+                  <h3 className="relative mt-5 text-[17px] font-semibold tracking-tight text-white leading-snug">
                     {e.title}
                   </h3>
-                  <p className="relative mt-2 text-[13.5px] leading-relaxed text-ink/70">
+                  <p className="relative mt-2 text-[13.5px] leading-relaxed text-white/70 flex-1">
                     {e.body}
                   </p>
                 </div>

@@ -255,9 +255,7 @@ export default function AboutPage() {
                     }}
                   />
                   <div className="relative">
-                    <p className="eyebrow text-sky-2 text-[10px]">
-                      0{i + 1} · {r.kicker}
-                    </p>
+                    <p className="eyebrow text-sky-2">{r.kicker}</p>
                   </div>
                   <h3 className="relative text-[18px] md:text-[19px] font-semibold tracking-tight text-ink leading-snug">
                     {r.title}

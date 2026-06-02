@@ -159,7 +159,7 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="px-2 pb-2">
-                    <p className="eyebrow text-sky-2">Program · {p.no}</p>
+                    <p className="eyebrow text-sky-2">Program</p>
                     <h3 className="mt-2 mb-3 text-[26px] md:text-[28px] font-semibold tracking-tight text-ink">
                       {p.title}
                     </h3>
