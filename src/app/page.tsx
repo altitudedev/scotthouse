@@ -184,8 +184,8 @@ export default function HomePage() {
           <Reveal variant="left" className="md:col-span-5 order-2 md:order-1">
             <div className="floating-img relative aspect-[4/5]">
               <Image
-                src="/images/about-scott.jpg"
-                alt="Scott Hause"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%205-x55oiJFS5eNYi7nhMMPz9tZXs6su0d.jpg"
+                alt="Scott Hause coaching on the practice tee"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
                 className="object-cover"
