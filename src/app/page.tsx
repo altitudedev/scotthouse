@@ -13,7 +13,7 @@ const PROGRAMS = [
   {
     no: "01",
     title: "Private Lessons",
-    img: "/images/lesson-1.jpeg",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%209-7O9ykAXhXCW0HiGUcdG3v4Iu0Wsjfr.jpg",
     body: "One-on-one coaching tailored to your swing, experience level, and goals. Lessons focus on building consistency, improving ball striking, and creating a clear plan for improvement.",
     href: "/private-lessons",
     cta: "Explore Lessons",
