@@ -72,8 +72,8 @@ export default function HomePage() {
             <div className="md:col-span-7">
               <p className="eyebrow text-sky-2">Personalized Coaching</p>
               <h2 className="display-lg mt-4 text-[clamp(2rem,4vw,3rem)]">
-                Coaching built around{" "}
-                <span className="text-sky">real improvement.</span>
+                Built for your goals,{" "}
+                <span className="text-sky">designed to transfer.</span>
               </h2>
             </div>
             <div className="md:col-span-5">
