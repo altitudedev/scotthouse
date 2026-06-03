@@ -89,8 +89,8 @@ export default function PrivateLessonsPage() {
         title="Coaching designed around"
         highlight="your game."
         tagline="Personalized one-on-one lessons with Scott Hause — built around your swing, your goals, and the way you actually learn."
-        img="/images/lesson-1.jpeg"
-        imgAlt="Private lesson at Westwood Golf Club"
+        img="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%209-7O9ykAXhXCW0HiGUcdG3v4Iu0Wsjfr.jpg"
+        imgAlt="Scott Hause coaching a golfer on grip technique on the practice tee"
         watermark="01"
         stats={[
           { value: "60", label: "Minute blocks" },

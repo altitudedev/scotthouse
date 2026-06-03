@@ -56,12 +56,12 @@ export function HomeHero() {
       >
         <div className="absolute -inset-10">
           <Image
-            src="/images/hero-main.jpg"
-            alt="Scott Hause on the practice tee"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%206-KQn4DjW8fCKNYFnxlaeHLaZ3J8KHFS.jpg"
+            alt="Coach instructing student on swing technique indoors"
             fill
             priority
             sizes="120vw"
-            className="object-cover object-[60%_center] opacity-85"
+            className="object-cover object-center opacity-85"
           />
         </div>
       </motion.div>

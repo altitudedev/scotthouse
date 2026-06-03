@@ -13,7 +13,7 @@ const PROGRAMS = [
   {
     no: "01",
     title: "Private Lessons",
-    img: "/images/lesson-1.jpeg",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%209-7O9ykAXhXCW0HiGUcdG3v4Iu0Wsjfr.jpg",
     body: "One-on-one coaching tailored to your swing, experience level, and goals. Lessons focus on building consistency, improving ball striking, and creating a clear plan for improvement.",
     href: "/private-lessons",
     cta: "Explore Lessons",
@@ -70,10 +70,10 @@ export default function HomePage() {
           {/* eyebrow + title bar */}
           <Reveal variant="up" className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10 md:mb-14 items-end">
             <div className="md:col-span-7">
-              <p className="eyebrow text-sky-2">The Approach</p>
+              <p className="eyebrow text-sky-2">Personalized Coaching</p>
               <h2 className="display-lg mt-4 text-[clamp(2rem,4vw,3rem)]">
-                Coaching built around{" "}
-                <span className="text-sky">real improvement.</span>
+                Built for your goals,{" "}
+                <span className="text-sky">designed to transfer.</span>
               </h2>
             </div>
             <div className="md:col-span-5">
@@ -90,8 +90,8 @@ export default function HomePage() {
           <Reveal variant="scale" delay={0.15}>
             <div className="relative aspect-[16/8] md:aspect-[16/6.5] overflow-hidden rounded-[28px] shadow-[0_30px_80px_-30px_rgba(11,11,13,0.4)]">
               <Image
-                src="/images/coaching-1.jpg"
-                alt="Scott Hause coaching on the practice tee"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Campus%20Academy%20Scott%20Hause%20%282%29-wv4GLJGgaWkkhFniJdd2iZL1o5yHQC.jpg"
+                alt="Coach mentoring a UCLA golfer at the golf course"
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -184,8 +184,8 @@ export default function HomePage() {
           <Reveal variant="left" className="md:col-span-5 order-2 md:order-1">
             <div className="floating-img relative aspect-[4/5]">
               <Image
-                src="/images/about-scott.jpg"
-                alt="Scott Hause"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%205-x55oiJFS5eNYi7nhMMPz9tZXs6su0d.jpg"
+                alt="Scott Hause coaching on the practice tee"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
                 className="object-cover"

@@ -133,8 +133,8 @@ export default function CampusAcademyPage() {
         <Reveal variant="scale" delay={0.2} className="mx-auto max-w-[1440px] px-6 md:px-10 mt-20">
           <div className="floating-img relative aspect-[16/8]">
             <Image
-              src="/images/campus-feature.jpg"
-              alt="CAMPUS Academy training session"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%206-KQn4DjW8fCKNYFnxlaeHLaZ3J8KHFS.jpg"
+              alt="Coach instructing student on swing technique indoors"
               fill
               sizes="100vw"
               className="object-cover"

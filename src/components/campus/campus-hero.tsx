@@ -51,8 +51,8 @@ export function CampusHero() {
       <motion.div className="absolute inset-0 z-0" style={{ y: imgY, x: mouseX }}>
         <div className="absolute -inset-10">
           <Image
-            src="/images/campus-1.jpg"
-            alt="CAMPUS Academy junior training"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%206-KQn4DjW8fCKNYFnxlaeHLaZ3J8KHFS.jpg"
+            alt="Coach instructing student on swing technique indoors"
             fill
             priority
             sizes="120vw"
