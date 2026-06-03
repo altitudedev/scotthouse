@@ -73,7 +73,7 @@ export default function HomePage() {
               <p className="eyebrow text-sky-2">Personalized Coaching</p>
               <h2 className="display-lg mt-4 text-[clamp(2rem,4vw,3rem)]">
                 Built for your goals,{" "}
-                <span className="text-sky">designed to transfer.</span>
+                <span className="text-sky">designed to transfer</span>.
               </h2>
             </div>
             <div className="md:col-span-5">
@@ -104,8 +104,8 @@ export default function HomePage() {
                   <p className="eyebrow text-sky">Philosophy In Practice</p>
                   <h3 className="display-lg mt-4 text-white text-[clamp(1.6rem,3vw,2.4rem)] leading-tight">
                     Simplify the swing.{" "}
-                    <span className="text-sky">Build trust.</span> Translate to
-                    the course.
+                    <span className="text-sky">Build trust.</span>{" "}
+                    Translate to the course.
                   </h3>
                   <p className="mt-5 text-white/80 text-[15px] md:text-[16px] leading-relaxed">
                     Long-term development, measurable improvement, and a game

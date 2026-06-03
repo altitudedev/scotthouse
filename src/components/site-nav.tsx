@@ -42,7 +42,7 @@ export function SiteNav() {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${headerBg}`}
       >
-        <div className="mx-auto max-w-[1440px] px-6 md:px-10 h-[68px] md:h-[76px] flex items-center justify-between gap-6">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10 h-[64px] md:h-[76px] flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center shrink-0 relative z-10">
             <Image
               src="/images/logo.png"
@@ -89,12 +89,14 @@ export function SiteNav() {
             })}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <Link
               href="/contact"
-              className="hidden md:inline-flex btn btn-primary btn-sm"
+              className="inline-flex btn btn-primary btn-sm whitespace-nowrap"
             >
-              Book a Lesson <span aria-hidden>›</span>
+              <span className="hidden sm:inline">Book a Lesson</span>
+              <span className="inline sm:hidden">Book</span>
+              <span aria-hidden>›</span>
             </Link>
 
             <button
