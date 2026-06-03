@@ -88,7 +88,7 @@ export default function HomePage() {
 
           {/* IMAGE BANNER with text overlay */}
           <Reveal variant="scale" delay={0.15}>
-            <div className="relative aspect-[16/8] md:aspect-[16/6.5] overflow-hidden rounded-[28px] shadow-[0_30px_80px_-30px_rgba(11,11,13,0.4)]">
+            <div className="relative min-h-[480px] sm:min-h-[420px] md:min-h-0 md:aspect-[16/6.5] overflow-hidden rounded-[28px] shadow-[0_30px_80px_-30px_rgba(11,11,13,0.4)]">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Campus%20Academy%20Scott%20Hause%20%282%29-wv4GLJGgaWkkhFniJdd2iZL1o5yHQC.jpg"
                 alt="Coach mentoring a UCLA golfer at the golf course"
@@ -97,24 +97,24 @@ export default function HomePage() {
                 className="object-cover"
               />
               {/* dark gradient overlay so text reads */}
-              <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/20" />
+              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-ink/90 via-ink/70 to-ink/30" />
               {/* text on the banner */}
-              <div className="absolute inset-0 flex items-center">
-                <div className="max-w-xl px-8 md:px-14">
+              <div className="absolute inset-0 flex items-end md:items-center p-6 sm:p-8 md:p-0">
+                <div className="max-w-xl md:px-14">
                   <p className="eyebrow text-sky">Philosophy In Practice</p>
-                  <h3 className="display-lg mt-4 text-white text-[clamp(1.6rem,3vw,2.4rem)] leading-tight">
+                  <h3 className="display-lg mt-3 md:mt-4 text-white text-[1.5rem] sm:text-[1.75rem] md:text-[clamp(1.6rem,3vw,2.4rem)] leading-tight">
                     Simplify the swing.{" "}
                     <span className="text-sky">Build trust.</span>{" "}
                     Translate to the course.
                   </h3>
-                  <p className="mt-5 text-white/80 text-[15px] md:text-[16px] leading-relaxed">
+                  <p className="mt-4 md:mt-5 text-white/80 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed">
                     Long-term development, measurable improvement, and a game
                     you can trust under pressure — every program designed to
                     actually transfer to scoring on the course.
                   </p>
                   <Link
                     href="/about"
-                    className="btn btn-primary mt-7"
+                    className="btn btn-primary mt-5 md:mt-7"
                   >
                     Read the philosophy <span aria-hidden>›</span>
                   </Link>
