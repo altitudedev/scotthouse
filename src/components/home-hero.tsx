@@ -151,20 +151,7 @@ export function HomeHero() {
         </div>
       </motion.div>
 
-      {/* Scroll cue (bottom-right) */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.5 }}
-        className="absolute bottom-8 right-6 md:right-10 z-10 flex items-center gap-3 text-white/55"
-      >
-        <span className="eyebrow text-[10px]">Scroll</span>
-        <motion.span
-          className="block w-12 h-px bg-white/50 origin-left"
-          animate={{ scaleX: [1, 1.4, 1] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </motion.div>
+
     </section>
   );
 }

@@ -208,19 +208,7 @@ export function CampusHero() {
         </div>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.6 }}
-        className="absolute bottom-12 left-6 md:left-10 z-10 flex items-center gap-3 text-white/55"
-      >
-        <span className="eyebrow text-[10px]">Begin the Process</span>
-        <motion.span
-          className="w-12 h-px bg-white/50 origin-left"
-          animate={{ scaleX: [1, 1.4, 1] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </motion.div>
+
 
     </section>
   );
