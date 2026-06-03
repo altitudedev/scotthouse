@@ -56,8 +56,8 @@ export function HomeHero() {
       >
         <div className="absolute -inset-10">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%206-KQn4DjW8fCKNYFnxlaeHLaZ3J8KHFS.jpg"
-            alt="Coach instructing student on swing technique indoors"
+            src="/images/hero-coaching.jpg"
+            alt="Golf coach instructing student on driving range with bright sun"
             fill
             priority
             sizes="120vw"
