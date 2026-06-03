@@ -37,7 +37,7 @@ const PROGRAMS = [
   {
     no: "04",
     title: "CAMPUS Academy",
-    img: "/images/campus-feature.jpg",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Scott%20Hause%20Golf%206-KQn4DjW8fCKNYFnxlaeHLaZ3J8KHFS.jpg",
     body: "Elite junior golf development for players pursuing collegiate golf opportunities through structured coaching, performance development, and recruiting support.",
     href: "/campus-academy",
     cta: "Explore Academy",
