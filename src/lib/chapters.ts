@@ -5,7 +5,7 @@ export const CHAPTERS: Record<string, Chapter> = {
     no: "02",
     eyebrow: "Chapter Two",
     title: "Meet the coach.",
-    body: "Two decades, every level of the game — Director of Instruction at Westwood and one of the Golf Digest Best Teachers in Texas.",
+    body: "Two decades, every level of the game — Director of Instruction at BraeBurn and one of the Golf Digest Best Teachers in Texas.",
     img: "/images/about-scott.jpg",
     href: "/about",
   },

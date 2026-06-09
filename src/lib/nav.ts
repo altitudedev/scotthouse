@@ -11,7 +11,7 @@ export const FOOTER_LINKS = [
 ] as const;
 
 export const CONTACT = {
-  club: "Westwood Golf Club",
+  club: "BraeBurn Country Club",
   city: "Houston, Texas",
   address: "8888 Country Creek St, Houston, TX 77036",
   phone: "(713) 555-0142",

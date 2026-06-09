@@ -10,7 +10,7 @@ import { PillarIcon, type PillarKind } from "@/components/pillar-icons";
 export const metadata: Metadata = {
   title: "About Scott Hause — PGA Professional · Houston, TX",
   description:
-    "Director of Instruction at Westwood Golf Club, Golf Digest Best Teacher in Texas, and PGA Professional. Two decades of coaching.",
+    "Director of Instruction at BraeBurn Country Club, Golf Digest Best Teacher in Texas, and PGA Professional. Two decades of coaching.",
 };
 
 const FOCUS: Array<{ icon: PillarKind; title: string; body: string }> = [
@@ -39,14 +39,14 @@ const FOCUS: Array<{ icon: PillarKind; title: string; body: string }> = [
 const TIMELINE: Array<{ era: string; title: string; sub?: string }> = [
   { era: "Early Career", title: "First PGA Professional appointment", sub: "Texas" },
   { era: "Building", title: "Junior development program scaled", sub: "Tournaments + collegiate prep" },
-  { era: "Leadership", title: "Director of Instruction · Westwood", sub: "Houston" },
+  { era: "Leadership", title: "Director of Instruction · BraeBurn", sub: "Houston" },
   { era: "Today", title: "Golf Digest Best Teachers · Texas", sub: "CAMPUS Academy Houston" },
 ];
 
 const RECOGNITION = [
   { kicker: "Recognition", title: "Golf Digest Best Teachers in Texas" },
   { kicker: "Certification", title: "PGA Professional · Class A" },
-  { kicker: "Appointment", title: "Director of Instruction · Westwood" },
+  { kicker: "Appointment", title: "Director of Instruction · BraeBurn" },
   { kicker: "Network", title: "Official CAMPUS Academy Location" },
 ];
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
               and touring professionals.
             </p>
             <p>
-              As Director of Instruction at Westwood Golf Club in Houston, Scott
+              As Director of Instruction at BraeBurn Country Club in Houston, Scott
               leads private coaching, junior development, and competitive
               training in one of the area&apos;s premier golf environments.
             </p>

@@ -51,7 +51,7 @@ const QUOTES = [
   },
   {
     body: "Excellent, no-nonsense approach to improving the golf swing.",
-    by: "Westwood Member",
+    by: "BraeBurn Member",
   },
   {
     body: "Scott is great at simplifying concepts and building confidence. Every lesson has a purpose.",
@@ -212,7 +212,7 @@ export default function HomePage() {
                 professionals.
               </p>
               <p>
-                As Director of Instruction at Westwood Golf Club in Houston,
+                As Director of Instruction at BraeBurn Country Club in Houston,
                 Scott combines technical coaching with practical on-course
                 application — helping players understand not only what to
                 improve, but how to improve it.

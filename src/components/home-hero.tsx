@@ -110,7 +110,7 @@ export function HomeHero() {
           >
             <span className="block h-px w-10 bg-sky" />
             <span className="eyebrow text-sky">
-              Houston · Westwood Golf Club
+              Houston · BraeBurn Country Club
             </span>
           </motion.div>
 
