@@ -70,15 +70,15 @@ export function SiteFooter() {
             <ul className="space-y-2.5 text-[14px] text-white/80">
               <li>
                 <a
-                  href={CONTACT.directionsUrl}
+                  href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Ka3VtliAwkCGMa5QXRbQX6NT&daddr=8101+Bissonnet+St,+Houston,+TX+77074"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-sky"
                 >
-                  {CONTACT.club}
+                  BraeBurn Country Club
                 </a>
               </li>
-              <li>{CONTACT.address}</li>
+              <li>8101 Bissonnet St, Houston, TX 77074</li>
               <li>
                 <a href={CONTACT.phoneHref} className="hover:text-sky">
                   {CONTACT.phone}
