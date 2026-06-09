@@ -83,7 +83,7 @@ export default function JuniorGolfPage() {
         highlight="generation of players."
         tagline="A structured environment focused on long-term improvement, competitive growth, and the habits that build great players."
         img="/images/junior-1.jpg"
-        imgAlt="Junior golfer at Westwood"
+        imgAlt="Junior golfer at BraeBurn"
         watermark="03"
         stats={[
           { value: "8 → 18", label: "Age range" },

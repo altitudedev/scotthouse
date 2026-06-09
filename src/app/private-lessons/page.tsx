@@ -10,7 +10,7 @@ import { PillarIcon, type PillarKind } from "@/components/pillar-icons";
 export const metadata: Metadata = {
   title: "Private Golf Lessons — Scott Hause Golf · Houston",
   description:
-    "Personalized one-on-one golf coaching at Westwood Golf Club with Scott Hause, PGA. Built around your swing, your goals, and long-term improvement.",
+    "Personalized one-on-one golf coaching at BraeBurn Country Club with Scott Hause, PGA. Built around your swing, your goals, and long-term improvement.",
 };
 
 const FOCUS: Array<{ label: string; icon: PillarKind }> = [

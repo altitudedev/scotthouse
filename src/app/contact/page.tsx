@@ -52,7 +52,7 @@ const QUICK_ACTIONS: Action[] = [
   {
     kicker: "Course Website",
     title: "wwgolfclub.com",
-    sub: "Westwood Golf Club · Houston, TX",
+    sub: "BraeBurn Country Club · Houston, TX",
     href: CONTACT.websiteUrl,
     external: true,
     icon: "globe",
@@ -185,7 +185,7 @@ export default function ContactPage() {
                 <p className="eyebrow text-ink-soft">Lesson Hours</p>
                 <p className="mt-2 text-[15px] text-ink/80 leading-relaxed">
                   Lessons by appointment — Scott teaches morning through
-                  afternoon at Westwood. Call or email for the soonest open
+                  afternoon at BraeBurn. Call or email for the soonest open
                   block.
                 </p>
               </div>
@@ -254,7 +254,7 @@ export default function ContactPage() {
       <section className="relative bg-ink text-white overflow-hidden min-h-[640px] flex items-end">
         <Image
           src="/images/westwood/westwood-course.webp"
-          alt="Westwood Golf Club — hole view"
+          alt="BraeBurn Country Club — hole view"
           fill
           sizes="100vw"
           className="object-cover"
@@ -269,14 +269,14 @@ export default function ContactPage() {
             <div className="mt-6 flex items-center gap-5">
               <Image
                 src="/images/westwood/westwood-1928-logo.webp"
-                alt="Westwood Golf Club · Est. 1928"
+                alt="BraeBurn Country Club · Est. 1928"
                 width={140}
                 height={140}
                 className="h-20 md:h-24 w-auto"
               />
               <div>
                 <h2 className="display-lg text-[clamp(2rem,4.4vw,3.4rem)] leading-none">
-                  Westwood Golf Club
+                  BraeBurn Country Club
                 </h2>
                 <p className="mt-2 eyebrow text-sky">
                   Est. 1928 · Houston, Texas
