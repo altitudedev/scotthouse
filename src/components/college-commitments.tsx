@@ -36,6 +36,10 @@ const COLLEGES = [
     name: "Rice University",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HAUSE%20Rice-Owls-logo-zQlpR0FLswZIvbgtu6ZlYK1IbUJkA3.png",
   },
+  {
+    name: "UCLA",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ucla-DnqfELgSf229kNoMPJkQngo5Zzfzqa.png",
+  },
 ];
 
 // Duplicate for seamless loop
